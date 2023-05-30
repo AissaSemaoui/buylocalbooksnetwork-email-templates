@@ -1,0 +1,181 @@
+<mjml>
+  <mj-head>
+    <mj-font
+      name="Poppins"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-image padding="0px" />
+      <mj-section padding="0px" />
+      <mj-table padding="0px" />
+      <mj-wrapper
+        padding="28px 24px"
+        background-color="#FDFDFD"
+        border-radius="14px"
+      />
+      <mj-text
+        font-size="14px"
+        line-height="160%"
+        color="#333333"
+        font-family="Poppins, sans-serif"
+        padding="0px"
+      />
+      <mj-button
+        css-class="btn-link"
+        line-height="100%"
+        font-size="12px"
+        font-weight="500"
+        font-family="Poppins, sans-serif"
+        color="#333333"
+        border-radius="24px"
+        padding="8px"
+        inner-padding="0"
+        background-color="#FFC71F"
+      />
+      <mj-class
+        name="secondary-button"
+        background-color="#2EAAED"
+        color="#FDFDFD"
+      />
+      <mj-class
+        name="text-xl"
+        font-size="28px"
+        line-height="120%"
+        font-family="Poppins, sans-serif"
+        font-weight="700"
+        color="#2EAAED"
+      />
+
+      <mj-class
+        name="text-lg"
+        font-size="20px"
+        line-height="140%"
+        font-family="Poppins, sans-serif"
+        font-weight="600"
+        color="#333333"
+      />
+
+      <mj-class
+        name="text-sm"
+        font-size="12px"
+        line-height="160%"
+        align="left"
+        font-family="Poppins, sans-serif"
+        font-weight="400"
+        color="#333333"
+      />
+
+      <mj-class
+        name="text-xs"
+        font-size="10px"
+        line-height="180%"
+        padding-bottom="4px"
+        align="left"
+        font-family="Poppins, sans-serif"
+        font-weight="400"
+        color="#333333"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .btn-link a { padding: 12px 24px; border-radius: 24px; border: 1px solid
+      black }.book-image-wrapper { height: 100px; } td{padding-bottom:5px}
+      .head-wrapper{ border:2px solid #2EAAED }
+    </mj-style>
+    <mj-title>Tracking Number Added to Your Order!</mj-title>
+  </mj-head>
+
+  <!--? ---------------------------------- Body ---------------------------------- -->
+
+  <mj-body background-color="#EEE5E9" css-class="body" width="480px">
+    <mj-spacer height="12px" />
+    <mj-wrapper background-color="transparent" padding="16px 8px">
+      <mj-body>
+        <mj-wrapper css-class="head-wrapper">
+          <!--?-------------------------- Logo ---------------------------->
+
+          <mj-section>
+            <mj-column>
+              <mj-image
+                src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+                width="100px"
+                alt="Buy local books network logo"
+              />
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Title ---------------------------->
+
+          <mj-section>
+            <mj-column padding="40px 0px">
+              <mj-text mj-class="text-xl" align="center">
+                Tracking Number Added to Your Order!
+              </mj-text>
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Message ---------------------------->
+
+          <mj-section>
+            <mj-column>
+              <mj-text font-weight="600" align="center">Hi, {{c1}}</mj-text>
+              <mj-text align="center">
+                Exciting update! We have added a tracking number to your order.
+                You can now easily track the progress of your package.
+              </mj-text>
+            </mj-column>
+          </mj-section>
+        </mj-wrapper>
+
+        <mj-spacer />
+
+        <!--? ---------------------------------- OFFER DETAILS ---------------------------------- -->
+
+        <mj-wrapper>
+          <!--?-------------------------- SubTitle ---------------------------->
+
+          <mj-section>
+            <mj-column>
+              <mj-text mj-class="text-lg" align="center">
+                OFFER DETAILS
+              </mj-text>
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Book Details ---------------------------->
+
+          <mj-section padding-top="32px">
+            <mj-column>
+              <mj-text font-weight="500"> TRACKING NUMBER : {{t1}} </mj-text>
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Sender Details ---------------------------->
+
+          <mj-section padding-top="24px">
+            <mj-column padding-right="8px" padding-bottom="16px">
+              <mj-text mj-class="text-sm" font-weight="600">
+                SHIPPING CARRIER
+              </mj-text>
+              <mj-text mj-class="text-md"> {{t4}}</mj-text>
+            </mj-column>
+            <mj-column>
+              <mj-text mj-class="text-sm" font-weight="600">
+                ESTIMATED DELIVERY DATE
+              </mj-text>
+              <mj-text mj-class="text-md"> {{t2}} </mj-text>
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Action Button ---------------------------->
+
+          <mj-section padding="5px">
+            <mj-column padding="24px 0 0">
+              <mj-button href="{{cta1}}">VIEW DETAILS</mj-button>
+            </mj-column>
+          </mj-section>
+        </mj-wrapper>
+      </mj-body>
+    </mj-wrapper>
+    <mj-spacer height="24px" />
+  </mj-body>
+</mjml>
